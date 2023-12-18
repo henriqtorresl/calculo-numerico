@@ -80,6 +80,10 @@ void linear(Dados dados) {
     double coeficientes[2] = {a, b};
 
     plotarGrafico("ajuste_linear_script.gp", dados, coeficientes, "Ajuste Linear", "linear_fit.png");
+
+    printf("\n");
+    printf("Função:\n\t y = %.2fx + %.2f", a, b);
+    printf("\n");
 }
 
 // Calcular os coeficientes do ajuste quadrático (y = ax^2 + bx + c)
@@ -113,6 +117,10 @@ void quadratico(Dados dados) {
     double coeficientes[3] = {a, b, c};
     
     plotarGrafico("ajuste_quadratico_script.gp", dados, coeficientes, "Ajuste Quadratico", "quadratic_fit.png");
+
+    printf("\n");
+    printf("Função:\n\t y = %.2fx^2 + %.2fx + %.2f", a, b, c);
+    printf("\n");
 }
 
 // Calcular os coeficientes do ajuste exponencial (y = ae^(bx))
@@ -143,6 +151,10 @@ void exponencial(Dados dados) {
     double coeficientes[2] = {a, b};
     
     plotarGrafico("exponencial_script.gp", dados, coeficientes, "Ajuste Exponencial", "exponential_fit.png");
+
+    printf("\n");
+    printf("Função:\n\t y = %.2fe^(%.2fx)", a, b);
+    printf("\n");
 }
 
 void polinomial(Dados dados) {
